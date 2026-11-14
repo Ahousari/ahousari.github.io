@@ -1,6 +1,6 @@
 My Rotation
 
-A computer-hosted music library with playlists, weighted shuffle, mobile downloads, and audio processing.
+A computer-hosted audio library with playlists, weighted shuffle, mobile downloads, and audio processing.
 
 Developed the library and playlist workflows, playback preferences, account-scoped device storage, deferred edits and additions, background audio jobs, and distribution/update tooling. The computer handles audio processing while the phone can retain finished tracks for offline listening.
 

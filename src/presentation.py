@@ -30,7 +30,7 @@ DESCRIPTIONS = {
  'ceremonial-mace':'The ceremonial mace I helped design for Greenville Technical College, from a multi-part CAD model through manufacturing iterations and the finished piece.',
  'embedded-hardware':'An alarm-clock team project using an encoder, SPI display, and interrupts, plus earlier analog-sensor and stepper-motor work.',
  'electric-echoworks':'My audio toolkit: conversion, denoising, frequency experiments, vocal separation, and transcription, with desktop and web interfaces.',
- 'my-rotation':'A music application for organizing, processing, and listening to my own library, including downloads and a phone interface.',
+ 'my-rotation':'A personal audio player for organizing, processing, and listening to my own library, including downloads and a phone interface.',
  'folio':'A reader that turns English and Arabic books into reading and listening editions, with saved progress and offline exports.',
  'pocket-bridge':'A phone/computer file-transfer tool with photo capture, document scanning, and pending transfers that can be retried.',
  'lantern-vale':'A browser adventure that grew from an opening demo into a larger campaign. The original opening is playable here.',

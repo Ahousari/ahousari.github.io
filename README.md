@@ -23,10 +23,10 @@ The builder uses Arial fonts from Windows when producing share cards. The curren
 - `src/content.py`: project descriptions and experience from the October 2026 technical resume and reviewed project documentation.
 - `src/style.css`: white/navy design and responsive layouts.
 - `src/demos.js`: self-contained engineering/interaction examples.
-- `src/rotation.js`: visitor-local music playground with IndexedDB storage, playback, playlists, weights, and WAV trimming.
+- `src/rotation.js`: visitor-local audio playground with IndexedDB storage, playback, playlists, weights, and WAV trimming.
 - `public/assets/`: selected owner-supplied portraits, mace photographs, resume, and sample-application images.
 - `public/play/lantern-vale/`: the original playable Lantern Vale opening demo, with its image exports compressed as WebP for the web.
-- `scripts/build.py`: pages, media cards, original synthesized audio, sitemap, and QR images.
+- `scripts/build.py`: pages, media cards, sitemap, and QR images; sample audio is copied from public assets.
 
 The full original desktop applications and their private installations are separate from this repository. Browser experiences explain their scope on the project pages. A QR code contains only a public experience URL.
 

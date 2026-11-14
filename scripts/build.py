@@ -1,6 +1,6 @@
 """Build a dependency-light static portfolio. Only explicitly selected media is copied."""
 from pathlib import Path
-import argparse, html, json, math, shutil, sys, wave, struct
+import argparse, html, json, math, shutil, sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'src'))
@@ -48,11 +48,11 @@ def preview(p):
     inner+=text(55,54,p['title'],11,'#555','bold')
     if kind=='rotation':
         inner+=rect(39,67,117,291,'#262626','#262626')+text(53,98,'MY ROTATION',12,'#fff','bold')
-        for i,s in enumerate(['All songs','Playlists','Downloads']): inner+=text(54,143+35*i,s,11,'#ddd')
+        for i,s in enumerate(['All audio','Playlists','Downloads']): inner+=text(54,143+35*i,s,11,'#ddd')
         inner+=text(181,110,'A little something for the day.',17,'#282828','bold')
-        for i,s in enumerate(['First Light','Night Drive','Quiet Orbit']):
+        for i,s in enumerate(['Library excerpt 1','Library excerpt 2','Library excerpt 3']):
             y=137+56*i; inner+=rect(181,y,32,32,a,a)+text(192,y+22,'▶',12,'#fff')+text(226,y+13,s,12,'#333','bold')+text(226,y+29,'Portfolio sessions',10,'#888')+text(527,y+22,f'{i+1}×',12,a)+line(181,y+45,575,y+45,'#e5e5e5',1)
-        inner+=rect(157,311,444,47,'#f8f8f8')+text(179,338,'▶     First Light',12,'#333')+line(338,335,551,335,'#ccc',3)+line(338,335,420,335,a,3)
+        inner+=rect(157,311,444,47,'#f8f8f8')+text(179,338,'▶     Library excerpt 1',12,'#333')+line(338,335,551,335,'#ccc',3)+line(338,335,420,335,a,3)
     elif kind=='circuit':
         inner+=text(64,100,'VOLTAGE DIVIDER',10,a,'bold')
         inner+=line(100,145,310,145,'#777')+line(310,145,310,176,'#777')+rect(298,176,24,45,'#fff','#555')+line(310,221,310,248,'#777')+rect(298,248,24,45,'#fff','#555')+line(310,293,310,315,'#777')+line(100,145,100,315,'#777')+line(100,315,310,315,'#777')
@@ -190,7 +190,7 @@ for p in PROJECTS:
     (ASSETS/f'{p["slug"]}-summary.txt').write_text(p['title']+'\n\n'+p['summary']+'\n\n'+p['contribution']+'\n\n'+p['limits']+'\n',encoding='utf-8')
 
 timeline=''.join(f'<li><strong>{e(role)} · {e(org)}</strong><div class="when">{e(when)}</div><p>{e(desc)}</p></li>' for org,role,when,desc in EXPERIENCE)
-about=f'''<main id="main" class="wrap"><div class="page-heading"><div class="eyebrow">About me</div><h1>About Abdurrahman</h1></div><div class="about-layout"><div><img src="/assets/portrait-outdoors.jpg" alt="Abdurrahman Housari outdoors with a mountain landscape" width="240" height="300"><div class="photo-source">Abdurrahman Housari</div><div class="actions"><a class="button" href="/assets/Abdurrahman-Housari-Resume-October-2026.pdf">View résumé</a></div></div><article class="prose"><p>I’m an electrical engineering honors student at Clemson University, graduating in December 2026. I enjoy work that connects physical systems, data, and software—from a circuit on a workbench to an application someone can use.</p><p>My experience spans industrial automation and robotics, thermal imaging and acquisition, CAD and manufacturing, and engineering lab instruction. My projects are a way to keep exploring: sometimes that means a processor in Logisim, sometimes a music application, and sometimes a ceremonial mace.</p><h2>Experience</h2><ul class="timeline">{timeline}</ul><h2>Education</h2><p><strong>Clemson University · Honors College</strong><br>B.S. Electrical Engineering · Expected December 2026</p><p><strong>Greenville Technical College</strong><br>Associate of Science · August 2025</p><h2>Beyond the project list</h2><p>I’ve taught DC circuits and 3D printing, worked with machinists, supported robotic systems, and spent time debugging unfamiliar hardware. Those experiences shape how I approach software too: inspect what is happening, test assumptions, and make the result understandable.</p><div class="actions"><a class="button primary" href="/projects/">Explore the projects</a><a class="button" href="/contact/">Get in touch</a></div></article></div></main>'''
+about=f'''<main id="main" class="wrap"><div class="page-heading"><div class="eyebrow">About me</div><h1>About Abdurrahman</h1></div><div class="about-layout"><div><img src="/assets/portrait-outdoors.jpg" alt="Abdurrahman Housari outdoors with a mountain landscape" width="240" height="300"><div class="photo-source">Abdurrahman Housari</div><div class="actions"><a class="button" href="/assets/Abdurrahman-Housari-Resume-October-2026.pdf">View résumé</a></div></div><article class="prose"><p>I’m an electrical engineering honors student at Clemson University, graduating in December 2026. I enjoy work that connects physical systems, data, and software—from a circuit on a workbench to an application someone can use.</p><p>My experience spans industrial automation and robotics, thermal imaging and acquisition, CAD and manufacturing, and engineering lab instruction. My projects are a way to keep exploring: sometimes that means a processor in Logisim, sometimes an audio application, and sometimes a ceremonial mace.</p><h2>Experience</h2><ul class="timeline">{timeline}</ul><h2>Education</h2><p><strong>Clemson University · Honors College</strong><br>B.S. Electrical Engineering · Expected December 2026</p><p><strong>Greenville Technical College</strong><br>Associate of Science · August 2025</p><h2>Beyond the project list</h2><p>I’ve taught DC circuits and 3D printing, worked with machinists, supported robotic systems, and spent time debugging unfamiliar hardware. Those experiences shape how I approach software too: inspect what is happening, test assumptions, and make the result understandable.</p><div class="actions"><a class="button primary" href="/projects/">Explore the projects</a><a class="button" href="/contact/">Get in touch</a></div></article></div></main>'''
 write(Path('about/index.html'),page('About',about,'/about/','about'))
 contact='''<main id="main" class="wrap"><div class="page-heading"><div class="eyebrow">Get in touch</div><h1>Contact</h1><p>I’m happy to discuss my projects, engineering opportunities, or a technical problem you’re working through.</p></div><section class="contact-panel"><h2>Abdurrahman Housari</h2><p>Electrical engineering · Clemson University<br>Graduating December 2026 · Greer, South Carolina</p><div class="actions"><a class="button primary" href="mailto:ahousari78@gmail.com">Send an email</a><a class="button" href="https://www.linkedin.com/in/ahousari/">Connect on LinkedIn</a></div><div class="actions"><a href="/assets/Abdurrahman-Housari-Resume-October-2026.pdf">Download my October 2026 résumé</a></div></section></main>'''
 write(Path('contact/index.html'),page('Contact',contact,'/contact/','contact'))
@@ -199,19 +199,7 @@ write(Path('robots.txt'),'User-agent: *\nAllow: /\nDisallow: /design/\n'+(f'Site
 routes=['/','/projects/','/about/','/contact/','/share/']+[f'/projects/{p["slug"]}/' for p in PROJECTS]+[f'/play/{p["slug"]}/' for p in PROJECTS]
 if BASE: write(Path('sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{e(BASE+r)}</loc></url>' for r in routes)+'</urlset>')
 
-# Original, deterministic sample audio. No personal library recordings are copied.
-sample_rate=8000
-sequences=[([60,64,67,72,67,64,62,67],0),([57,60,64,67,64,60,55,59],1),([65,69,72,76,72,69,67,72],2)]
-for idx,(notes,_) in enumerate(sequences):
-    with wave.open(str(ASSETS/f'sample-{idx+1}.wav'),'wb') as f:
-        f.setnchannels(1); f.setsampwidth(2); f.setframerate(sample_rate)
-        samples=bytearray()
-        for i in range(sample_rate*8):
-            t=i/sample_rate; step=min(7,int(t)); local=t-step; frequency=440*2**((notes[step]-69)/12)
-            envelope=min(1,local*30)*math.exp(-local*2.6)*min(1,(8-t)*4)
-            value=.22*envelope*(math.sin(2*math.pi*frequency*t)+.24*math.sin(4*math.pi*frequency*t))
-            samples+=struct.pack('<h',round(max(-1,min(1,value))*32767))
-        f.writeframes(samples)
+# Sample audio is copied from public/assets with the other public files.
 
 # Share cards are explicitly designed project summaries, not screenshots of the full apps.
 from PIL import Image, ImageDraw, ImageFont, ImageOps
