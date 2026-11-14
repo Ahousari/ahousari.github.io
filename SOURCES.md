@@ -15,7 +15,7 @@ Content was reviewed against the owner's October 2026 technical resume and these
 - Cruise control: MATLAB source and shared-controller comparison scripts.
 - Embedded hardware: alarm-clock team report and GE sensor/stepper source.
 - Document automation: README and original CLI/web implementations.
-- Mace: user-supplied CAD/finished-piece images and the October 2026 resume's design/manufacturing account. Original reference: https://sites.google.com/view/gtc-mace-project
+- Mace: user-supplied CAD/finished-piece images and the October 2026 resume's design/manufacturing account. Greenville Technical College credits Abdurrahman Housari, Andrew Duvall, and Adam McArdle as student designers in its official post: https://www.linkedin.com/feed/update/urn:li:activity:7390200325347000321/. Original reference: https://sites.google.com/view/gtc-mace-project
 
 No private app accounts, runtime pairing data, personal libraries, model caches, training footage, or internal work reports are needed by the public site.
 

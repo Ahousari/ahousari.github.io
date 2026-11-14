@@ -141,11 +141,11 @@ PROJECTS = [
 
 PROJECTS.insert(6, dict(slug='ceremonial-mace',title='Greenville Technical College Ceremonial Mace',subtitle='From CAD to a ceremonial centerpiece.',category='Design & manufacturing',tags=['CAD','Design for manufacture','Brass & aluminum','Machining collaboration'],demo='mace',featured=True,
  summary='A ceremonial mace designed through more than 100 hours of CAD and manufacturing iteration, with a finished brass/aluminum assembly.',
- overview='The ceremonial mace project connects a detailed digital design with a finished object for Greenville Technical College. The supplied CAD view and photograph show the relationship between the original design, its metal components, and the final presentation on a wooden stand.',
- contribution='Designed the mace through more than 100 hours of CAD and design-for-manufacturability iteration with machinists, supporting fabrication and finishing of the multi-part brass/aluminum assembly.',
+ overview='The ceremonial mace was designed for Greenville Technical College by Abdurrahman Housari, Andrew Duvall, and Adam McArdle. The CAD view and photograph show the relationship between the digital design, its metal components, and the finished piece on a wooden stand.',
+ contribution='Contributed more than 100 hours of CAD and design-for-manufacturability iteration with machinists, supporting fabrication and finishing of the multi-part brass/aluminum assembly.',
  highlights=['A complete multi-part CAD design.','Collaboration with machinists on manufacturability.','Brass and aluminum components with contrasting finishes.','A finished ceremonial object and presentation stand.'],
  decisions=['Iterate the design with the people who would manufacture the parts.','Consider component interfaces, proportions, and material finishes together.','Carry the design through fabrication and final presentation.'],
- limits='The images show the supplied CAD design and finished piece. Fabrication involved collaboration with machinists; design ownership does not imply that every component was personally machined.',
+ limits='Designed with Andrew Duvall and Adam McArdle, with machinists collaborating on fabrication and finishing.',
  demo_title='From digital model to finished piece',demo_description='Switch between the CAD design and the finished ceremonial mace, or view them side by side.',
  parts=[('Design','Multi-part CAD model, proportions, interfaces, and presentation.'),('Manufacturing collaboration','Design-for-manufacture iteration, fabrication support, and finishing.')],facts=[('Design effort','100+ hours'),('Materials','Brass + aluminum'),('Institution','Greenville Technical College')]))
 
@@ -153,6 +153,6 @@ EXPERIENCE = [
  ('Savannah River National Laboratory','Advanced Engineering Intern','May–July 2026','Led a thermal PCB fault-detection pilot, developed a Python/OpenCV thermal-image processing workflow, and worked through camera acquisition and hardware integration.'),
  ('Clemson University','EV & Power Honors Researcher','September 2025–April 2026','Compared CAN signals during battery testing, contributed to battery CAD/modeling, completed high-voltage EV safety training, and modeled electrical faults in Simscape.'),
  ('Good Sense Automation','Engineering Intern','July 2024–April 2025','Supported vision-guided robotic cells, investigated robot/software issues, and designed and 3D-printed grippers, fixtures, stands, and other integration parts.'),
- ('Greenville Technical College','Engineering Lab Technician','November 2024–December 2025','Led DC-circuit and 3D-printing labs, developed exercises, troubleshot equipment, and designed the college ceremonial mace through CAD and manufacturing iteration.'),
+ ('Greenville Technical College','Engineering Lab Technician','November 2024–December 2025','Led DC-circuit and 3D-printing labs, developed exercises, troubleshot equipment, and helped design the college ceremonial mace through CAD and manufacturing iteration.'),
  ('Lorraine Machine','Engineering Intern / Machining Assistant','August 2023–May 2024','Modified CAD for manufacturability and supported CAM, CNC setup, maintenance, and repair work.')
 ]

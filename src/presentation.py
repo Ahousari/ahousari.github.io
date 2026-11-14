@@ -27,7 +27,7 @@ DESCRIPTIONS = {
  'pedestrian-device-detection':'A six-class pedestrian detector built around phone and headphone use. I worked on the dataset, Palmetto training runs, and the evaluation tools.',
  'computer-vision':'Photo calibration and design tools for a cookie printer, alongside experiments in tracking, segmentation, pose, and stereo vision.',
  'cruise-control':'MATLAB simulations comparing PI and predictive cruise control over the same changing road profile.',
- 'ceremonial-mace':'The ceremonial mace I designed for Greenville Technical College, from a multi-part CAD model through manufacturing iterations and the finished piece.',
+ 'ceremonial-mace':'The ceremonial mace I helped design for Greenville Technical College, from a multi-part CAD model through manufacturing iterations and the finished piece.',
  'embedded-hardware':'An alarm-clock team project using an encoder, SPI display, and interrupts, plus earlier analog-sensor and stepper-motor work.',
  'electric-echoworks':'My audio toolkit: conversion, denoising, frequency experiments, vocal separation, and transcription, with desktop and web interfaces.',
  'my-rotation':'A music application for organizing, processing, and listening to my own library, including downloads and a phone interface.',
