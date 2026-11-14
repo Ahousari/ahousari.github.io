@@ -3,7 +3,7 @@
 Content was reviewed against the owner's October 2026 technical resume and these local project materials:
 
 - CircuitStudio: README, circuit source modules, and existing verification summary. The original 289 solver checks predate four subsequently added manual pages; no blanket validation claim is made for all 203 configurations.
-- My Rotation: README, release manifest, interface assets, and verification notes. Browser-playground features are separately implemented and described. Its audio samples are short excerpts supplied from the owner’s saved library; the first two are labeled with the saved performer metadata.
+- My Rotation: README, release manifest, interface assets, and verification notes. Browser-playground features are separately implemented and described. Its audio samples are short excerpts supplied from the owner’s saved library; the first is labeled with saved performer metadata.
 - Electric EchoWorks: desktop-suite, web-suite, and Voice Coach documentation.
 - Folio: README and application workflows.
 - Pocket Bridge: current application README in the recovered application source.

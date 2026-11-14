@@ -50,9 +50,9 @@ def preview(p):
         inner+=rect(39,67,117,291,'#262626','#262626')+text(53,98,'MY ROTATION',12,'#fff','bold')
         for i,s in enumerate(['All audio','Playlists','Downloads']): inner+=text(54,143+35*i,s,11,'#ddd')
         inner+=text(181,110,'A little something for the day.',17,'#282828','bold')
-        for i,s in enumerate(['Library excerpt 1','Library excerpt 2','Library excerpt 3']):
+        for i,s in enumerate(['Library recording 1','Library recording 2']):
             y=137+56*i; inner+=rect(181,y,32,32,a,a)+text(192,y+22,'▶',12,'#fff')+text(226,y+13,s,12,'#333','bold')+text(226,y+29,'Portfolio sessions',10,'#888')+text(527,y+22,f'{i+1}×',12,a)+line(181,y+45,575,y+45,'#e5e5e5',1)
-        inner+=rect(157,311,444,47,'#f8f8f8')+text(179,338,'▶     Library excerpt 1',12,'#333')+line(338,335,551,335,'#ccc',3)+line(338,335,420,335,a,3)
+        inner+=rect(157,311,444,47,'#f8f8f8')+text(179,338,'▶     Library recording 1',12,'#333')+line(338,335,551,335,'#ccc',3)+line(338,335,420,335,a,3)
     elif kind=='circuit':
         inner+=text(64,100,'VOLTAGE DIVIDER',10,a,'bold')
         inner+=line(100,145,310,145,'#777')+line(310,145,310,176,'#777')+rect(298,176,24,45,'#fff','#555')+line(310,221,310,248,'#777')+rect(298,248,24,45,'#fff','#555')+line(310,293,310,315,'#777')+line(100,145,100,315,'#777')+line(100,315,310,315,'#777')
