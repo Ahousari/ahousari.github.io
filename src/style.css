@@ -66,3 +66,5 @@
 @media(max-width:640px){.personal-intro{padding:32px 0}.personal-intro h1{font-size:31px}.intro-role{font-size:17px}.personal-intro .hero-copy{font-size:14px}.project-card h3{font-size:21px}.project-card p{font-size:15px!important}.project-card .work-skills{font-size:14px!important}.card-footer{font-size:14px!important}.home-contact{display:block}.home-contact>a{display:inline-block;margin-top:10px}.project-title .app-logo{width:44px;height:44px}.prediction-gallery{gap:14px}.prediction-gallery img{height:275px}.project-summary{font-size:16px}.project-evidence h2{font-size:24px}}
 
 .demo-app-title{display:flex;gap:9px;align-items:center}.demo-app-title .app-logo{width:25px;height:25px}.homepage-work .project-grid{margin-top:24px}.card-media img[src*="original-circuit-workbench"]{object-position:50% 40%}
+
+.home-filters button{font-size:14px;letter-spacing:normal;text-transform:none}.project-card[hidden]{display:none}

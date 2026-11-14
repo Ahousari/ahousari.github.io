@@ -24,6 +24,14 @@
     category=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));filter();
   }));
   document.getElementById('project-search')?.addEventListener('input',filter);
+  const homeCards=[...document.querySelectorAll('#home-projects .project-card')];
+  document.querySelectorAll('[data-home-filter]').forEach(button=>button.addEventListener('click',()=>{
+    const category=button.dataset.homeFilter;
+    document.querySelectorAll('[data-home-filter]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+    let count=0;
+    homeCards.forEach(card=>{card.hidden=category!=='all'&&!card.dataset.homeCategory.split('|').includes(category);if(!card.hidden)count++;});
+    const status=document.getElementById('home-results-count');if(status)status.textContent=`${count} ${count===1?'project':'projects'}`;
+  }));
   document.querySelectorAll('[data-mace]').forEach(b=>b.addEventListener('click',()=>{
     document.querySelectorAll('[data-mace]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
     document.querySelectorAll('[data-mace-view]').forEach(v=>v.hidden=b.dataset.mace!=='both'&&b.dataset.mace!==v.dataset.maceView);
