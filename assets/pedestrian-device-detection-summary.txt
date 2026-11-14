@@ -1,0 +1,7 @@
+Pedestrian Device-Use Detection
+
+A six-class pedestrian detection/classification study with dataset tools, GPU training, and detailed error analysis.
+
+Developed the dataset preparation and review workflows, split checks, Palmetto training helpers, model-comparison tools, and evaluation/reporting pipeline. Experiments compared clean-filtered and ambiguity-inclusive training sets while retaining the validation and historical test partitions.
+
+V4 small scored 244/384 (63.5%) correct-class detections on validation and 54/257 (21.0%) on the reused historical test. V4.1 nano scored 197/384 (51.3%) and 49/257 (19.1%). These are limited experimental results, not deployment accuracy.

@@ -1,0 +1,7 @@
+PI vs. Model Predictive Cruise Control
+
+A shared vehicle simulation for comparing PI and predictive cruise control on a varying road profile.
+
+Developed the simulation scripts and comparison workflow, including a variable road profile, time-stepped vehicle motion, controller logic, plots, and statistical summaries.
+
+The public sample compares PI feedback with a simplified road-preview feed-forward controller. It illustrates the comparison question and is not the original MATLAB MPC implementation or a validated vehicle model.

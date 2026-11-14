@@ -1,0 +1,7 @@
+Lantern Vale
+
+A story-game project developed from an earlier demo into Chapter One and a multi-chapter campaign.
+
+Developed and iterated the playable systems, browser interface, campaign structure, character/equipment behavior, and save workflows. The campaign combines platform routes, turn-based party battles, tower defense, and formation battles.
+
+The browser experience is the project’s actual original opening demo. The newer ten-chapter campaign is a separate, larger build. Both are projects for testing and iteration, rather than commercially finished releases.

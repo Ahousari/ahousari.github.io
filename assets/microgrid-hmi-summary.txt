@@ -1,0 +1,7 @@
+DC Microgrid HMI Prototype
+
+A conceptual control-room display for normal operation, grid outage, and emergency disconnect scenarios.
+
+Developed the proposal display and scenario-based interface. The prototype makes the chosen operating state visible through equipment labels, flows, and illustrative readings.
+
+All values, device states, controls, and thresholds are simulated. No equipment is connected. This is an interface concept, not a validated engineering model, operational SCADA installation, or safety system.

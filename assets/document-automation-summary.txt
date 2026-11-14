@@ -1,0 +1,7 @@
+Document Generation & Automation
+
+Command-line and web tools that turn tabular data and document templates into generated files.
+
+Developed the data/template upload workflow, placeholder replacement, filename patterns, output handling, and browser interface around the document-generation process.
+
+The browser sample demonstrates placeholder substitution and downloads a text result. Full Word/PDF generation belongs to the local application and its document-conversion dependencies.

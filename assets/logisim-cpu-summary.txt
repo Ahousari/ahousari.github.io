@@ -1,0 +1,7 @@
+8-Bit CPU in Logisim
+
+A custom processor datapath with an ALU, registers, program counter, instruction decoder, and conditional branches.
+
+Designed and simulated the datapath and documented its instruction syntax and microarchitecture. Chained 4-bit ALU sections support 8-bit operations; registers retain results and the program counter selects the next instruction. A division program demonstrates a conditional loop.
+
+The original design is a Logisim simulation. This browser teaching model demonstrates the datapath concepts with a readable example instruction notation; it does not emulate the exact original machine-code bit format.

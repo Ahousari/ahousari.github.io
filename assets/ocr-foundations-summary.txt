@@ -1,0 +1,7 @@
+OCR & Machine-Learning Foundations
+
+Handwritten-letter OCR and selected early experiments in regression, image classification, and feature design.
+
+Developed the thresholding, cropping, labeling, template comparison, feature counting, annotation, and paragraph-recognition tools. Compared baseline and modified methods with saved predictions and confusion matrices.
+
+The isolated-letter baseline scored 16/26 (61.54%); structural constraints scored 10/26. Multiscale local paragraph matching improved 4/42 to 10/42. The small generated glyph demo below illustrates template comparison, not the original evaluation.

@@ -1,0 +1,7 @@
+Smart-Grid Classification & Visualization
+
+Interactive IEEE 68-bus exploration and machine-learning classification of event type and affected area.
+
+Developed the Grid Explorer and standalone viewing tools, baseline-relative feature pipeline, grouped cross-validation workflow, classifier comparison, and saved results presentation. The explorer uses supplied scenario labels to explain recordings; those annotations are not model predictions.
+
+The saved model has 94.4% joint accuracy on 36 scenario-level test cases; mean grouped-CV joint accuracy is 53.8%. The public animation below is a conceptual generated disturbance, not a replay of those recordings or a live grid.

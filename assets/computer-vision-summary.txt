@@ -1,0 +1,7 @@
+Computer Vision & Vision-Guided Systems
+
+Cookie-project interfaces and a collection of experiments in detection, tracking, segmentation, pose, and 3D geometry.
+
+Developed application interfaces and experiments across image processing, pretrained inference, tracking, and camera geometry. The collection keeps individual implementations distinct while explaining the methods and engineering questions they share.
+
+The browser example uses a generated test image and simple color thresholding. Cookie Vision currently uses photos; live-camera work is planned. Cookie Studio starts in simulation, and prepared firmware still needs physical hardware/calibration tests. The collection’s implementations are separate coursework and application projects.

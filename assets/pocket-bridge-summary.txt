@@ -1,0 +1,7 @@
+Pocket Bridge
+
+A practical phone-to-computer file-transfer application for moving documents between devices.
+
+Developed the cross-device web application, local pending-document workflow, retry/receipt handling, scanner interface, sign-in, and bounded file-transfer service. The application uses a private connection to the computer and supports remembered devices without exposing a personal installation publicly.
+
+This sample transfers file metadata between two on-page panels. Selected files remain in your browser; nothing is uploaded or sent to another device.

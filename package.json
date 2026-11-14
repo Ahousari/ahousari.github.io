@@ -1,0 +1,7 @@
+{
+  "name": "abdurrahman-housari-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal engineering portfolio with self-contained browser demonstrations",
+  "scripts": {"build": "python scripts/build.py", "serve": "python -m http.server 4173 --directory build"}
+}

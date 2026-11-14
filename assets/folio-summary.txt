@@ -1,0 +1,7 @@
+Folio
+
+A bilingual reading and audiobook application with local narration, saved progress, and portable editions.
+
+Developed the reading and preparation workflows, language and narration controls, resumable preparation, edition exports, and device-side reading experience. The pipeline retains completed passages and exposes a narration sample before longer processing.
+
+This browser reading edition supports sample or pasted text, passage navigation, bookmarks, saved progress, and browser read-aloud. PDF extraction, OCR, and the original local narration pipeline belong to the full application. Browser voices are separate from Folio’s prepared narration models.

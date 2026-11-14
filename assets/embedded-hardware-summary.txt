@@ -1,0 +1,7 @@
+Embedded Systems & Hardware
+
+An interrupt-driven alarm-clock team project and earlier sensor-to-stepper experimentation.
+
+Contributed to the alarm-clock design and firmware with Omar Housari, working through display communication, encoder interrupts, and control states. The earlier Arduino program ties a voltage threshold to opposite motor movements.
+
+The alarm prototype used an LED to represent the intended relay output and did not complete the planned real-time-clock implementation. The browser sample illustrates the interface states without controlling hardware.

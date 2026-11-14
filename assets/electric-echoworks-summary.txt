@@ -1,0 +1,7 @@
+Electric EchoWorks
+
+A collection of audio tools, from spectral denoising and frequency translation to transcription and vocal separation.
+
+Developed the application workflows and integration around classical processing and pretrained models, including background jobs, preview generation, storage/history, and a shared web processing service. Related Voice Coach work explores speaking-volume, pace, and target-word feedback.
+
+The public sample illustrates frequency filtering with generated audio. Full transcription and source separation require the local Python service and pretrained models. Their quality depends on the recording; model training from scratch is not claimed.

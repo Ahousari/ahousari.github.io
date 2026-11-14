@@ -1,0 +1,7 @@
+CircuitStudio
+
+Interactive schematics, hand calculations, and real LTspice simulations in one circuit workbench.
+
+Developed the local application, circuit definitions, analytical explanations, simulation workflow, interactive plots, and export tools. The interface connects the visible circuit to its electrical definition and makes individual runs inspectable through netlists, raw samples, and simulator logs.
+
+The full application runs locally with LTspice and educational semiconductor models. This browser workbench calculates an unloaded voltage divider and an ideal RC low-pass response analytically; it is not an online SPICE solver.

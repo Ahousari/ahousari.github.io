@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /design/
+Sitemap: https://ahousari.github.io/sitemap.xml
