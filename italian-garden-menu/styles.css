@@ -17,3 +17,29 @@
 
 .section-title small{font-size:9pt}
 
+
+/* Individually placed section photos. Fixed frames keep preview and PDF pagination identical. */
+.photo-editor{border:1px solid var(--line);border-radius:7px;margin:9px 0;background:#fff;overflow:hidden}
+.photo-editor>summary{display:flex;align-items:center;gap:9px;padding:9px;cursor:pointer;list-style:none}
+.photo-editor>summary::-webkit-details-marker{display:none}
+.photo-editor>summary img{width:46px;height:37px;object-fit:cover;border-radius:4px;flex:none;background:#edf0e7}
+.photo-editor>summary>span:nth-child(2){min-width:0;flex:1}
+.photo-editor>summary strong{display:block;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.photo-editor>summary small{display:block;font-size:9px;color:#849076;margin-top:3px}
+.photo-chevron{color:#8a967c}.photo-editor[open]>summary{background:#f0f5e9;border-bottom:1px solid var(--line)}
+.photo-editor-body{padding:12px}.photo-editor-body .field{margin-bottom:11px}
+.photo-presets{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:14px}
+.photo-presets button{font-size:10px;padding:6px;background:#f6f8f1}
+.photo-gallery{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px;width:100%;margin:0 0 7pt}
+.menu-photo{flex:0 0 auto;min-width:0;width:calc((100% + 8px) * var(--photo-fraction) - 8px);max-width:100%;margin:0;break-inside:avoid}
+.menu-photo.photo-align-center{margin-left:auto;margin-right:auto}.menu-photo.photo-align-right{margin-left:auto}
+.menu-photo .section-photo{display:block;width:100%;height:var(--photo-height);max-height:none;margin:0;border-radius:0;background:transparent}
+.menu-photo.photo-rounded .section-photo{border-radius:10px}.menu-photo.photo-circle .section-photo{border-radius:50%}
+.menu-photo figcaption{font:italic calc(var(--body-size) * .9)/1.2 Arial,sans-serif;margin-top:4px;white-space:pre-line;overflow-wrap:anywhere}
+.section-heading{display:flex;align-items:center;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--frame);padding-bottom:5pt;margin-bottom:6pt}
+.menu-section .section-heading>.section-title{flex:1 1 70px;border:0;padding:0;margin:0;text-align:center}
+.section-heading>.menu-photo{margin:0}.pizza-section .section-heading{border-bottom:2px solid var(--accent)}
+.menu-dish-bundle{min-width:0;break-inside:avoid}.menu-dish-bundle>.photo-gallery:last-child{margin-top:5pt}
+.section-bottom-photos{padding-top:6pt}.section-bottom-photos:empty{display:none}
+.unplaced-photos{display:flex;gap:10px;flex-wrap:wrap}.unplaced-photos img{width:100px;height:65px;object-fit:contain;background:#eee}
+body.loading .studio{pointer-events:none;opacity:.55}
